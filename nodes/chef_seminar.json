@@ -1,0 +1,15 @@
+{
+  "name": "chef_seminar",
+  "postgresql": {
+    "password": {
+      "postgres": "chefseminar20150223"
+    }
+  },
+  "run_list": [
+    "recipe[chef_seminar_ruby]",
+    "recipe[chef_seminar_nginx]",
+    "recipe[chef_seminar_postgresql]",
+    "recipe[mitfahren_nginx]",
+    "recipe[nodejs::default]"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ruby",
+  "default_attributes": {},
+  "override_attributes": {},
+  "json_class": "Chef::Role",
+  "description": "",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[rbenv-install-rubies]"
+  ],
+  "default_attributes": {
+    "rbenv_install_rubies": {
+      "global_version": "2.2.0"
+    }
+  }
+}
